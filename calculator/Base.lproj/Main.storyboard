@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="LLPIXEL3.ttf">
+            <string>LLPixel</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ftf-o3-Uyw">
+                                <rect key="frame" x="57" y="30" width="300" height="256"/>
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MEL-BL-MSz">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="256"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="calculation" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gik-ra-0Ks">
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="20.666666666666668"/>
+                                                <fontDescription key="fontDescription" name="LLPixel" family="LLPixel" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Gik-ra-0Ks" firstAttribute="width" secondItem="MEL-BL-MSz" secondAttribute="width" id="3fG-U4-nEu"/>
+                                            <constraint firstItem="Gik-ra-0Ks" firstAttribute="top" secondItem="MEL-BL-MSz" secondAttribute="top" id="D93-9b-LNf"/>
+                                            <constraint firstItem="Gik-ra-0Ks" firstAttribute="leading" secondItem="MEL-BL-MSz" secondAttribute="leading" id="V7F-Uc-V7E"/>
+                                            <constraint firstAttribute="bottom" secondItem="Gik-ra-0Ks" secondAttribute="bottom" constant="275.66666666666669" placeholder="YES" id="fwn-Sw-ofe"/>
+                                            <constraint firstAttribute="trailing" secondItem="Gik-ra-0Ks" secondAttribute="trailing" id="woL-nL-1qq"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="contentLayoutGuide" id="gmJ-5y-rvZ"/>
+                                        <viewLayoutGuide key="frameLayoutGuide" id="k2y-7k-uUz"/>
+                                    </scrollView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="MEL-BL-MSz" secondAttribute="bottom" id="2Ok-kX-IBh"/>
+                                    <constraint firstItem="MEL-BL-MSz" firstAttribute="width" secondItem="Ftf-o3-Uyw" secondAttribute="width" id="9hM-SI-1Lk"/>
+                                    <constraint firstItem="MEL-BL-MSz" firstAttribute="leading" secondItem="Ftf-o3-Uyw" secondAttribute="leading" id="9zN-GT-QjA"/>
+                                    <constraint firstAttribute="trailing" secondItem="MEL-BL-MSz" secondAttribute="trailing" id="Ic7-sP-ehx"/>
+                                    <constraint firstAttribute="bottom" secondItem="MEL-BL-MSz" secondAttribute="bottom" id="KHo-ET-XOk"/>
+                                    <constraint firstItem="MEL-BL-MSz" firstAttribute="height" secondItem="Ftf-o3-Uyw" secondAttribute="height" id="R8g-Py-U2s"/>
+                                    <constraint firstAttribute="trailing" secondItem="MEL-BL-MSz" secondAttribute="trailing" id="Xw7-N9-ARD"/>
+                                    <constraint firstItem="MEL-BL-MSz" firstAttribute="top" secondItem="Ftf-o3-Uyw" secondAttribute="top" id="gd0-ho-Qud"/>
+                                    <constraint firstAttribute="width" constant="300" id="mF7-Cb-Y43"/>
+                                    <constraint firstAttribute="trailing" secondItem="MEL-BL-MSz" secondAttribute="trailing" id="x6H-Vs-RR7"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AFe-aD-aJe">
+                                <rect key="frame" x="57" y="306" width="300" height="60"/>
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vho-YO-pQU">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="60"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="calculation" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3GA-SV-eoS">
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="20.666666666666668"/>
+                                                <fontDescription key="fontDescription" name="LLPixel" family="LLPixel" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="3GA-SV-eoS" secondAttribute="trailing" id="DSB-Uf-eUf"/>
+                                            <constraint firstItem="3GA-SV-eoS" firstAttribute="top" secondItem="vho-YO-pQU" secondAttribute="top" id="Jy3-2H-hw2"/>
+                                            <constraint firstAttribute="bottom" secondItem="3GA-SV-eoS" secondAttribute="bottom" constant="79.5" placeholder="YES" id="m0s-cr-2fh"/>
+                                            <constraint firstItem="3GA-SV-eoS" firstAttribute="leading" secondItem="vho-YO-pQU" secondAttribute="leading" id="vL2-HL-zrr"/>
+                                            <constraint firstItem="3GA-SV-eoS" firstAttribute="width" secondItem="vho-YO-pQU" secondAttribute="width" id="ylr-R1-yOj"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="contentLayoutGuide" id="U2i-VP-MBY"/>
+                                        <viewLayoutGuide key="frameLayoutGuide" id="qPx-pJ-ISo"/>
+                                    </scrollView>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstItem="vho-YO-pQU" firstAttribute="height" secondItem="AFe-aD-aJe" secondAttribute="height" id="0yN-sU-EOn"/>
+                                    <constraint firstAttribute="width" constant="300" id="7uY-4x-F7b"/>
+                                    <constraint firstAttribute="height" constant="60" id="FY4-3f-Y7E"/>
+                                    <constraint firstItem="vho-YO-pQU" firstAttribute="top" secondItem="AFe-aD-aJe" secondAttribute="top" id="PF2-67-E45"/>
+                                    <constraint firstItem="vho-YO-pQU" firstAttribute="width" secondItem="AFe-aD-aJe" secondAttribute="width" id="XHH-on-hsN"/>
+                                    <constraint firstItem="vho-YO-pQU" firstAttribute="leading" secondItem="AFe-aD-aJe" secondAttribute="leading" id="ndg-NM-KlK"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pXK-U0-f1z">
+                                <rect key="frame" x="52" y="396" width="310" height="310"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kaU-zZ-zTg">
+                                        <rect key="frame" x="10" y="10" width="50" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="WLQ-2h-x1B"/>
+                                            <constraint firstAttribute="height" constant="50" id="kk0-TA-XFT"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="LLPixel" family="LLPixel" pointSize="25"/>
+                                        <state key="normal" title="(">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="leftBrackets:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c52-Dd-ltk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7El-p2-AIB">
+                                        <rect key="frame" x="10" y="70" width="50" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="QxZ-PF-Wlr"/>
+                                            <constraint firstAttribute="width" constant="50" id="odq-pB-mtE"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="LLPixel" family="LLPixel" pointSize="25"/>
+                                        <state key="normal" title="7">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btn7:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i7V-yQ-w0r"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TQA-k1-qAz">
+                                        <rect key="frame" x="10" y="130" width="50" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="GPY-MH-3AI"/>
+                                            <constraint firstAttribute="height" constant="50" id="WWQ-PB-zD5"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="LLPixel" family="LLPixel" pointSize="25"/>
+                                        <state key="normal" title="4">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btn4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rn0-VT-aZn"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0aE-A6-o7o">
+                                        <rect key="frame" x="10" y="190" width="50" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="SQd-Q2-wDk"/>
+                                            <constraint firstAttribute="width" constant="50" id="gLi-zb-oHy"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="LLPixel" family="LLPixel" pointSize="25"/>
+                                        <state key="normal" title="1">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btn1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AhQ-gH-DHb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qfx-oO-LAP">
+                                        <rect key="frame" x="10" y="250" width="50" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="F7C-HW-hb2"/>
+                                            <constraint firstAttribute="width" constant="50" id="Fjk-Xm-zEY"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="LLPixel" family="LLPixel" pointSize="25"/>
+                                        <state key="normal" title="0">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btn0:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5yU-Fx-vb5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Yq-kQ-42r">
+                                        <rect key="frame" x="70" y="10" width="50" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Al7-h3-GAk"/>
+                                            <constraint firstAttribute="width" constant="50" id="lya-5p-osL"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="LLPixel" family="LLPixel" pointSize="25"/>
+                                        <state key="normal" title=")">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="rightBrackets:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vyx-Aa-17P"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f3S-1T-VhC">
+                                        <rect key="frame" x="70" y="70" width="50" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="1Am-t3-G1J"/>
+                                            <constraint firstAttribute="height" constant="50" id="sqx-gE-RsF"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="LLPixel" family="LLPixel" pointSize="25"/>
+                                        <state key="normal" title="8">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btn8:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ioz-vC-RJi"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Lh-mh-6io">
+                                        <rect key="frame" x="70" y="130" width="50" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="UE5-oN-qaR"/>
+                                            <constraint firstAttribute="height" constant="50" id="ysh-Uk-3Nr"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="LLPixel" family="LLPixel" pointSize="25"/>
+                                        <state key="normal" title="5">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btn5:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xht-kE-Oys"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XKT-LV-d5H">
+                                        <rect key="frame" x="70" y="190" width="50" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="2fq-zu-88e"/>
+                                            <constraint firstAttribute="width" constant="50" id="rwh-bk-gy8"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="LLPixel" family="LLPixel" pointSize="25"/>
+                                        <state key="normal" title="2">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btn2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xGV-xR-J8h"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C2x-BQ-eUi">
+                                        <rect key="frame" x="70" y="250" width="50" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="CKe-Yi-eIx"/>
+                                            <constraint firstAttribute="width" constant="50" id="XLk-hN-p7y"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="LLPixel" family="LLPixel" pointSize="25"/>
+                                        <state key="normal" title=".">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="dotBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="clR-8s-tP5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s2W-Wy-vmH">
+                                        <rect key="frame" x="130" y="10" width="50" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="byp-Oo-zC5"/>
+                                            <constraint firstAttribute="height" constant="50" id="dhs-UF-OyJ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="LLPixel" family="LLPixel" pointSize="25"/>
+                                        <state key="normal" title="←">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="deleteBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r4q-IC-n58"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="95z-IH-Zpk">
+                                        <rect key="frame" x="130" y="70" width="50" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="BJB-LB-f0e"/>
+                                            <constraint firstAttribute="height" constant="50" id="KyS-bq-u88"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="LLPixel" family="LLPixel" pointSize="25"/>
+                                        <state key="normal" title="9">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btn9:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qFS-lL-Xa6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B6u-ZH-hhW">
+                                        <rect key="frame" x="130" y="130" width="50" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Njh-Zk-TEk"/>
+                                            <constraint firstAttribute="width" constant="50" id="Zlz-xq-hPX"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="LLPixel" family="LLPixel" pointSize="25"/>
+                                        <state key="normal" title="6">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btn6:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xvA-6d-qtp"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xrs-qi-h3Q">
+                                        <rect key="frame" x="190" y="10" width="50" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="CMH-J3-kDH"/>
+                                            <constraint firstAttribute="height" constant="50" id="IVv-dv-0H9"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="LLPixel" family="LLPixel" pointSize="25"/>
+                                        <state key="normal" title="AC">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="ACBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dUf-Zi-2dC"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5LY-Yb-Jw1">
+                                        <rect key="frame" x="190" y="70" width="50" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="2g5-FU-Xhe"/>
+                                            <constraint firstAttribute="height" constant="50" id="bVM-wU-rtf"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="LLPixel" family="LLPixel" pointSize="25"/>
+                                        <state key="normal" title="+">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="plusBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pwc-AT-mJi"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rzc-tj-Yfz">
+                                        <rect key="frame" x="190" y="130" width="50" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="28X-5t-GOn"/>
+                                            <constraint firstAttribute="height" constant="50" id="P75-Dk-prr"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="LLPixel" family="LLPixel" pointSize="25"/>
+                                        <state key="normal" title="-">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="minusBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W3U-2U-nko"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VAL-pF-clX">
+                                        <rect key="frame" x="190" y="190" width="50" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="7Hx-uS-wzf"/>
+                                            <constraint firstAttribute="height" constant="50" id="iHF-wo-FJ1"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="LLPixel" family="LLPixel" pointSize="25"/>
+                                        <state key="normal" title="×">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="timesBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6tT-LJ-i8a"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xRb-vw-6J6">
+                                        <rect key="frame" x="190" y="250" width="50" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="EFZ-US-dko"/>
+                                            <constraint firstAttribute="height" constant="50" id="WvX-yU-mpf"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="LLPixel" family="LLPixel" pointSize="25"/>
+                                        <state key="normal" title="÷">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="devidedBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ukm-lp-Qpa"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eqx-9k-dLt">
+                                        <rect key="frame" x="130" y="250" width="50" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="2MR-gM-6Y0"/>
+                                            <constraint firstAttribute="height" constant="50" id="PHf-IP-2Py"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="LLPixel" family="LLPixel" pointSize="25"/>
+                                        <state key="normal" title="=">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="equalBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YeV-lt-D7f"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pmb-oU-TSh">
+                                        <rect key="frame" x="130" y="190" width="50" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="97K-aO-wfO"/>
+                                            <constraint firstAttribute="height" constant="50" id="gz5-vl-Nnp"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="LLPixel" family="LLPixel" pointSize="25"/>
+                                        <state key="normal" title="3">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btn3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ojg-ga-2Wz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ke-O9-RC5">
+                                        <rect key="frame" x="250" y="130" width="50" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="0GT-nf-3qJ"/>
+                                            <constraint firstAttribute="width" constant="50" id="Amv-Dg-iuZ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="LLPixel" family="LLPixel" pointSize="17"/>
+                                        <state key="normal" title="b">
+                                            <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="blueBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cP3-Z4-DNu"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RyU-ql-Luq">
+                                        <rect key="frame" x="250" y="70" width="50" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="N9r-LC-mfh"/>
+                                            <constraint firstAttribute="height" constant="50" id="a0r-w7-nVo"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="LLPixel" family="LLPixel" pointSize="17"/>
+                                        <state key="normal" title="r">
+                                            <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="redBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1v1-62-SeV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6TT-Qt-QIn">
+                                        <rect key="frame" x="250" y="190" width="50" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="ExA-Vi-ZZE"/>
+                                            <constraint firstAttribute="height" constant="50" id="Ky8-MN-wEX"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="LLPixel" family="LLPixel" pointSize="17"/>
+                                        <state key="normal" title="y">
+                                            <color key="titleColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="yellowBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="klb-zj-YOc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="foO-6t-HcG">
+                                        <rect key="frame" x="250" y="250" width="50" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="MdS-FU-DhN"/>
+                                            <constraint firstAttribute="width" constant="50" id="Phb-FM-g9z"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="LLPixel" family="LLPixel" pointSize="17"/>
+                                        <state key="normal" title="g">
+                                            <color key="titleColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="greenBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dyd-8D-4kW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WMe-Tq-ReS">
+                                        <rect key="frame" x="250" y="10" width="50" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="7LE-rX-gUh"/>
+                                            <constraint firstAttribute="height" constant="50" id="PQm-79-xGs"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="LLPixel" family="LLPixel" pointSize="17"/>
+                                        <state key="normal" title="w">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="whiteBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="coW-pG-4zi"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="0.84372324486301364" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="6TT-Qt-QIn" firstAttribute="leading" secondItem="Xrs-qi-h3Q" secondAttribute="trailing" constant="10" id="3e5-n7-o84"/>
+                                    <constraint firstItem="XKT-LV-d5H" firstAttribute="leading" secondItem="0aE-A6-o7o" secondAttribute="trailing" constant="10" id="4q2-hC-S8m"/>
+                                    <constraint firstItem="f3S-1T-VhC" firstAttribute="leading" secondItem="7El-p2-AIB" secondAttribute="trailing" constant="10" id="7KX-HS-xXa"/>
+                                    <constraint firstItem="Qfx-oO-LAP" firstAttribute="top" secondItem="0aE-A6-o7o" secondAttribute="bottom" constant="10" id="8yD-ur-xTg"/>
+                                    <constraint firstItem="Xrs-qi-h3Q" firstAttribute="leading" secondItem="s2W-Wy-vmH" secondAttribute="trailing" constant="10" id="ACs-tI-P5G"/>
+                                    <constraint firstItem="4Lh-mh-6io" firstAttribute="leading" secondItem="TQA-k1-qAz" secondAttribute="trailing" constant="10" id="BPF-ps-zbD"/>
+                                    <constraint firstItem="5LY-Yb-Jw1" firstAttribute="top" secondItem="Xrs-qi-h3Q" secondAttribute="bottom" constant="10" id="BYn-g4-dff"/>
+                                    <constraint firstItem="foO-6t-HcG" firstAttribute="leading" secondItem="xRb-vw-6J6" secondAttribute="trailing" constant="10" id="Csa-ix-qzj"/>
+                                    <constraint firstItem="0aE-A6-o7o" firstAttribute="leading" secondItem="pXK-U0-f1z" secondAttribute="leading" constant="10" id="DOE-xi-aZb"/>
+                                    <constraint firstItem="Xrs-qi-h3Q" firstAttribute="top" secondItem="pXK-U0-f1z" secondAttribute="top" constant="10" id="DUU-7o-hSh"/>
+                                    <constraint firstItem="B6u-ZH-hhW" firstAttribute="leading" secondItem="4Lh-mh-6io" secondAttribute="trailing" constant="10" id="DzF-mt-XXE"/>
+                                    <constraint firstItem="kaU-zZ-zTg" firstAttribute="top" secondItem="pXK-U0-f1z" secondAttribute="top" constant="10" id="Fjn-j2-3la"/>
+                                    <constraint firstItem="TQA-k1-qAz" firstAttribute="leading" secondItem="pXK-U0-f1z" secondAttribute="leading" constant="10" id="Hp9-Jh-PgB"/>
+                                    <constraint firstItem="Pmb-oU-TSh" firstAttribute="top" secondItem="B6u-ZH-hhW" secondAttribute="bottom" constant="10" id="I5f-8p-glD"/>
+                                    <constraint firstAttribute="width" constant="310" id="Lal-ZO-6Kt"/>
+                                    <constraint firstItem="RyU-ql-Luq" firstAttribute="top" secondItem="WMe-Tq-ReS" secondAttribute="bottom" constant="10" id="Ocf-II-gmg"/>
+                                    <constraint firstItem="kaU-zZ-zTg" firstAttribute="leading" secondItem="pXK-U0-f1z" secondAttribute="leading" constant="10" id="POf-ae-Wd5"/>
+                                    <constraint firstItem="VAL-pF-clX" firstAttribute="leading" secondItem="Pmb-oU-TSh" secondAttribute="trailing" constant="10" id="PYD-6B-qcj"/>
+                                    <constraint firstItem="7El-p2-AIB" firstAttribute="leading" secondItem="pXK-U0-f1z" secondAttribute="leading" constant="10" id="PcM-cB-dBW"/>
+                                    <constraint firstItem="xRb-vw-6J6" firstAttribute="top" secondItem="VAL-pF-clX" secondAttribute="bottom" constant="10" id="PpS-Th-iU8"/>
+                                    <constraint firstItem="6TT-Qt-QIn" firstAttribute="top" secondItem="9ke-O9-RC5" secondAttribute="bottom" constant="10" id="Rf4-ZJ-umM"/>
+                                    <constraint firstItem="XKT-LV-d5H" firstAttribute="top" secondItem="4Lh-mh-6io" secondAttribute="bottom" constant="10" id="SMB-go-D3p"/>
+                                    <constraint firstItem="Rzc-tj-Yfz" firstAttribute="top" secondItem="5LY-Yb-Jw1" secondAttribute="bottom" constant="10" id="Ssv-wC-yYY"/>
+                                    <constraint firstItem="9ke-O9-RC5" firstAttribute="leading" secondItem="Rzc-tj-Yfz" secondAttribute="trailing" constant="10" id="TsM-FK-Jig"/>
+                                    <constraint firstItem="WMe-Tq-ReS" firstAttribute="leading" secondItem="Xrs-qi-h3Q" secondAttribute="trailing" constant="10" id="UXL-q0-JRd"/>
+                                    <constraint firstItem="TQA-k1-qAz" firstAttribute="top" secondItem="7El-p2-AIB" secondAttribute="bottom" constant="10" id="WiD-9Z-9SE"/>
+                                    <constraint firstItem="RyU-ql-Luq" firstAttribute="leading" secondItem="5LY-Yb-Jw1" secondAttribute="trailing" constant="10" id="aDf-SB-S3P"/>
+                                    <constraint firstItem="5LY-Yb-Jw1" firstAttribute="leading" secondItem="95z-IH-Zpk" secondAttribute="trailing" constant="10" id="bg4-oZ-zuB"/>
+                                    <constraint firstItem="0aE-A6-o7o" firstAttribute="top" secondItem="TQA-k1-qAz" secondAttribute="bottom" constant="10" id="bgf-pW-KOp"/>
+                                    <constraint firstAttribute="height" constant="310" id="e9Z-Es-WNM"/>
+                                    <constraint firstItem="s2W-Wy-vmH" firstAttribute="top" secondItem="pXK-U0-f1z" secondAttribute="top" constant="10" id="fZI-8t-m0e"/>
+                                    <constraint firstItem="eqx-9k-dLt" firstAttribute="top" secondItem="Pmb-oU-TSh" secondAttribute="bottom" constant="10" id="faH-7G-rt7"/>
+                                    <constraint firstItem="Pmb-oU-TSh" firstAttribute="leading" secondItem="XKT-LV-d5H" secondAttribute="trailing" constant="10" id="fdc-K2-0f8"/>
+                                    <constraint firstItem="f3S-1T-VhC" firstAttribute="top" secondItem="1Yq-kQ-42r" secondAttribute="bottom" constant="10" id="fel-Pv-Acg"/>
+                                    <constraint firstItem="Qfx-oO-LAP" firstAttribute="leading" secondItem="pXK-U0-f1z" secondAttribute="leading" constant="10" id="g35-2a-wOa"/>
+                                    <constraint firstItem="B6u-ZH-hhW" firstAttribute="top" secondItem="95z-IH-Zpk" secondAttribute="bottom" constant="10" id="gWJ-oc-p9F"/>
+                                    <constraint firstItem="xRb-vw-6J6" firstAttribute="leading" secondItem="eqx-9k-dLt" secondAttribute="trailing" constant="10" id="hgY-Lt-27H"/>
+                                    <constraint firstItem="foO-6t-HcG" firstAttribute="top" secondItem="6TT-Qt-QIn" secondAttribute="bottom" constant="10" id="i5i-UJ-1Sl"/>
+                                    <constraint firstItem="95z-IH-Zpk" firstAttribute="top" secondItem="s2W-Wy-vmH" secondAttribute="bottom" constant="10" id="jYr-5C-mdH"/>
+                                    <constraint firstItem="95z-IH-Zpk" firstAttribute="leading" secondItem="f3S-1T-VhC" secondAttribute="trailing" constant="10" id="kua-3p-rEE"/>
+                                    <constraint firstItem="s2W-Wy-vmH" firstAttribute="leading" secondItem="1Yq-kQ-42r" secondAttribute="trailing" constant="10" id="lmQ-Kk-wux"/>
+                                    <constraint firstItem="4Lh-mh-6io" firstAttribute="top" secondItem="f3S-1T-VhC" secondAttribute="bottom" constant="10" id="mde-7U-c5z"/>
+                                    <constraint firstItem="eqx-9k-dLt" firstAttribute="leading" secondItem="C2x-BQ-eUi" secondAttribute="trailing" constant="10" id="nwb-JT-zmr"/>
+                                    <constraint firstItem="C2x-BQ-eUi" firstAttribute="leading" secondItem="Qfx-oO-LAP" secondAttribute="trailing" constant="10" id="pgV-a3-SnR"/>
+                                    <constraint firstItem="1Yq-kQ-42r" firstAttribute="top" secondItem="pXK-U0-f1z" secondAttribute="top" constant="10" id="poW-sl-rpj"/>
+                                    <constraint firstItem="9ke-O9-RC5" firstAttribute="top" secondItem="RyU-ql-Luq" secondAttribute="bottom" constant="10" id="tE1-cR-htY"/>
+                                    <constraint firstItem="7El-p2-AIB" firstAttribute="top" secondItem="kaU-zZ-zTg" secondAttribute="bottom" constant="10" id="tI3-oz-Ymx"/>
+                                    <constraint firstItem="C2x-BQ-eUi" firstAttribute="top" secondItem="XKT-LV-d5H" secondAttribute="bottom" constant="10" id="uE8-0E-vzr"/>
+                                    <constraint firstItem="VAL-pF-clX" firstAttribute="top" secondItem="Rzc-tj-Yfz" secondAttribute="bottom" constant="10" id="uMm-Fi-MF2"/>
+                                    <constraint firstItem="Rzc-tj-Yfz" firstAttribute="leading" secondItem="B6u-ZH-hhW" secondAttribute="trailing" constant="10" id="unv-hC-IVG"/>
+                                    <constraint firstItem="WMe-Tq-ReS" firstAttribute="top" secondItem="pXK-U0-f1z" secondAttribute="top" constant="10" id="vca-h0-2BD"/>
+                                    <constraint firstItem="1Yq-kQ-42r" firstAttribute="leading" secondItem="kaU-zZ-zTg" secondAttribute="trailing" constant="10" id="wTs-XL-oKc"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pXK-U0-f1z" secondAttribute="bottom" constant="30" id="08O-Xq-CGp"/>
+                            <constraint firstItem="Ftf-o3-Uyw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="37e-a9-4ts"/>
+                            <constraint firstItem="AFe-aD-aJe" firstAttribute="top" secondItem="Ftf-o3-Uyw" secondAttribute="bottom" constant="20" id="QRG-Uc-vO4"/>
+                            <constraint firstItem="pXK-U0-f1z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cPF-bT-9h1"/>
+                            <constraint firstItem="pXK-U0-f1z" firstAttribute="top" secondItem="AFe-aD-aJe" secondAttribute="bottom" constant="30" id="cWw-WK-Ks8"/>
+                            <constraint firstItem="Ftf-o3-Uyw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="o4o-fG-5Lh"/>
+                            <constraint firstItem="AFe-aD-aJe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yul-jw-eFk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="keyView" destination="pXK-U0-f1z" id="lgC-lw-XSo"/>
+                        <outlet property="largeMathLabel" destination="Gik-ra-0Ks" id="ZzA-Vh-eIX"/>
+                        <outlet property="largeScrollView" destination="MEL-BL-MSz" id="StJ-gH-wDC"/>
+                        <outlet property="largeView" destination="Ftf-o3-Uyw" id="DEy-eg-Xr8"/>
+                        <outlet property="mathLabel" destination="3GA-SV-eoS" id="jlc-DO-UYa"/>
+                        <outlet property="scrollView" destination="vho-YO-pQU" id="I81-Y4-EV5"/>
+                        <outlet property="smallView" destination="AFe-aD-aJe" id="HxP-3S-MUb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-220.28985507246378" y="99.456521739130437"/>
+        </scene>
+    </scenes>
+</document>
